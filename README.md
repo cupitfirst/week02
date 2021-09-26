@@ -5,7 +5,7 @@
   - 串行GC：堆内存越大，GC次数越少，GC pause 时长增加。
   - 并行GC：堆内存越大，GC次数越少，GC pause 时长增加，比串行 GC pause 时长短。
   - CMSGC：堆内存越大，GC次数越少，GC pause 时长增加，与并行GC pause 时长接近。
-  - G1GC：堆内存越大，GC次数越少，GC pause 时长增长慢，GC 效率非常高，4G内存情况下，GC时长10m以内。
+  - G1GC：堆内存越大，GC次数越少，GC pause 时长增长慢，GC 效率非常高，4G内存情况下，GC 时长 10ms 以内。
   - Gateway sb压测，内存从 512M 增长到 2G，在同等环境下，使用不同 GC 策略，对压测影响不大，RPS 在200范围内波动。
 
 * 6.（必做）写一段代码，使用 HttpClient 或 OkHttp 访问  http://localhost:8801 ，代码提交到 GitHub  
